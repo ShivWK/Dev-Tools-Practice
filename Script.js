@@ -33,6 +33,22 @@
 // }
 // nestedCall();
 
+// function nestedCall() {
+//     let outerVar = "out";
+//     let outerVar2 = "out2";
+
+//     function inside() {
+//         let innerVar1 = "I'm inside";
+//         console.log(outerVar);
+
+//     }
+
+//     return inside;
+// }
+// let inner = nestedCall();
+// inner();
+
+
 function nestedCall() {
     let outerVar = "out";
     let outerVar2 = "out2";
@@ -46,4 +62,4 @@ function nestedCall() {
 
     inside();
 }
-nestedCall();
+nestedCall()
