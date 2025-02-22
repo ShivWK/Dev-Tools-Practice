@@ -13,6 +13,26 @@
 // }
 // b()
 
+// function nestedCall() {
+//     let outerVar = "out";
+//     let outerVar2 = "out2";
+
+//     function inside() {
+//         let innerVar1 = "I'm inside";
+//         console.log(outerVar);
+
+//         function nestedInner() {
+//             let innerVar2 = "I'm grand inside";
+//             console.log(innerVar1);
+//         }
+//         nestedInner()
+//     }
+//     inside();
+
+//     return outerVar;;
+// }
+// nestedCall();
+
 function nestedCall() {
     let outerVar = "out";
     let outerVar2 = "out2";
@@ -21,14 +41,9 @@ function nestedCall() {
         let innerVar1 = "I'm inside";
         console.log(outerVar);
 
-        function nestedInner() {
-            let innerVar2 = "I'm grand inside";
-            console.log(innerVar1);
-        }
-        nestedInner()
+        nestedCall();
     }
-    inside();
 
-    return outerVar;;
+    inside();
 }
 nestedCall();
