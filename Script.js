@@ -48,6 +48,8 @@
 // let inner = nestedCall();
 // inner();
 
+//step over
+
 // function nestedCall() {
 //     let outerVar = "out";
 //     let outerVar2 = "out2";
@@ -64,15 +66,34 @@
 // }
 // nestedCall()
 
-function call1() {
-    debugger
-    let call1VAr = "Shiv";
+//Step into
 
-    setTimeout(() => {
-        console.log(call1VAr);
-    }, 4000)
+// function call1() {
+//     debugger
+//     let call1VAr = "Shiv";
+
+//     setTimeout(() => {
+//         console.log(call1VAr);
+//     }, 4000)
+// }
+// call1()
+
+//Step out
+
+function nestedCall() {
+    let outerVar = "out";
+    let outerVar2 = "out2";
+
+    function inside() {
+        let innerVar1 = "I'm inside";
+        console.log(outerVar);
+
+        // nestedCall();
+    }
+
+    inside();
 }
-call1()
+nestedCall()
 
 
  
