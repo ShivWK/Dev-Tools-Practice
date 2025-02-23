@@ -48,10 +48,10 @@
 // let inner = nestedCall();
 // inner();
 
-
 function nestedCall() {
     let outerVar = "out";
     let outerVar2 = "out2";
+    debugger
 
     function inside() {
         let innerVar1 = "I'm inside";
@@ -63,3 +63,6 @@ function nestedCall() {
     inside();
 }
 nestedCall()
+
+
+ 
